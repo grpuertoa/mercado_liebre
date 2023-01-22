@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------Main------------------------------------------------------*/
+.main-container {
+
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: #EAC926;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.title {
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #0B1320;
+}
+
+
+.form .form-register {
+
+    padding: 30px;
+}
+
+.form .input-field {
+
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.input-field input{
+
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    padding: 0 35px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    
+}
+
+.input-field select{
+
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    padding: 0 35px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    
+}
+
+.input-field select:is(:focus){
+
+    border-color: yellow;
+}
+
+
+.input-field i {
+
+    position: absolute;
+    top: 37%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 17px;
+}
+
+.input-field input:is(:focus){
+
+    border-color: yellow;
+}
+
+/*Faltan los iconos*/
+
+.input-date {
+
+    color: #0B1320;
+    margin-top: 20px;
+}
+
+.form .register-button {
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form .register-button input {
+
+    padding: 6px;
+    border-radius: 5px;
+    color: #0B1320; /*CAMBIAR EL COLOR */
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #EAC926;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-button input:hover {
+
+        background-color: #FDDF01;
+}
+
+.form .already-account {
+
+   margin-top: 30px;
+   text-align: center;
+   color: #0B1320;
+} 
+
+
+.form a{
+
+    text-decoration: none;
+}
+
+.form a:hover {
+
+    text-decoration: underline;
+}
+
+
+@media (max-width: 400px) {
+    
+    .main-container {
+
+        height: 130vh;
+    }
+    
+    .form {
+
+        width: 83%;
+    }
+
+    .input-field {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 400px) {
+
+    .main-container {
+
+        height: 130vh;
+    }
+
+    .form {
+
+        width: 83%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .form {
+        width: 83%;
+    }
+} 

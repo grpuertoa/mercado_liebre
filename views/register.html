@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/df0fd52d0d.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles_register.css">
+        <link rel="stylesheet" href="css/styles_header.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <div class="header-div-logo"> 
+                    <a href="/"><img class="img-logo" src="images/logo-mercado-liebre.svg" alt="imagen-logo"></a>
+                </div>
+                <div class="header-user">
+                    <ul>
+                        <!-- Reservado para botones adicionales-->
+                </div>
+            </div>
+            <div class="header-bottom" >
+                <a href="#" class="bars-button"><i class="fa-solid fa-bars"></i></a>
+                <nav class="header-nav-bar">
+                    <ul>
+                        <li><a href="/register">Crear cuenta <i class="fa-sharp fa-solid fa-user-plus"></i></a></li>
+                        <li><a href="/login">Ingresar <i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="#">Mi carrito <i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#">Ofertas <i class="fa-solid fa-tag"></i></a></li>
+                        <li><a href="#">Vender <i class="fa-solid fa-money-bill-1"></i> </a></li>
+                   </ul>
+                </nav>
+                <ul class="header-search-bar">
+                    <li><input type="search" name="search-bar" id="search-bar" placeholder="Buscar productos, marcas y más..."></li>
+                    <li><button id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    <!-- Mobile + Tablet : Apretar el boton para aparecer la barra de search -->
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-container">
+           
+                <div class="form">
+        
+                    <h1 class="title">Registro de cuenta</h1>
+        
+                    <form class="form-register" action="#" method="post">
+                        <div class="input-field">
+                            <input type="text" name="name" id="name" placeholder="Nombre(s)">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="surname" id="surname" placeholder="Apellido(s)">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <div class="input-field">
+                            <select type="text" name="user_type" id="user_type" placeholder="Tipo de usuario">
+                                <option>Comprador</option>
+                                <option>Vendedor</option>
+                                <option>Comprador y vendedor</option>
+                            </select>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                            <i class="fa-solid fa-lock"></i>
+                            <!--Agregar icono para mostrar/ocultar contraseña-->
+                        </div>
+                        <div class="input-field">
+                            <input type="password" name="repass" id="repass" placeholder="Reingrese la contraseña">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        
+                        <div class="input-field">
+                            <input type="date" id="date" name="date" value="" min="" max="2018-12-31"> <!-- Verificar inicio/tope de fecha -->
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        
+                        <div class="register-button">
+                            <input type="button" value="Registrarse">
+                        </div>
+                        
+        
+                        <div class="already-account">
+                            
+                            <label >¿Ya tienes una cuenta?</label>
+                            <a href="/login">Iniciar sesión</a>
+                        
+                        </div>
+                   
+                    </form>
+                </div>
+                    
+         
+            </div>
+            
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+</html>
